@@ -1,0 +1,189 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    font-family:cursive
+}
+#homepage{
+    height: 100vh;
+}
+#navBar{
+    
+    height: 60px;
+}
+#nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    justify-content: center;
+   justify-content: space-around;
+   margin-top: 10px;
+   margin-left: 30px;
+   
+}
+
+  
+a{
+   
+    text-decoration: none;
+}
+
+#intro{
+    display:flex;
+   
+    margin-left: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    
+}
+#profilePic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 40%;
+    margin-top: 20px;
+   
+    
+
+}
+img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+   
+}
+
+#introMessage{
+    font-size: 40px;
+    margin-top: 50px;
+    height:200px;
+    width:100%;
+    text-align: center;
+}
+.welcome-message{
+    position: relative;
+    top: 50%;  
+    width: 100vh;
+    margin-top: 50px;
+    font-size: 60px;
+    margin-right: 10px;
+    text-align: center;
+    transform: translateY(-50%);  
+    color:#0D6dfd;
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.anim-typewriter{
+  animation: typewriter 3s steps(55) 1s 1 normal both,
+             blinkTextCursor 500ms steps(55) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100vw;}
+}
+.running-line1 {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    animation: runLine 4s linear forwards;
+    z-index: 1; 
+}
+
+
+@keyframes runLine {
+    from {
+        width: 0;
+        left: 0; /* Start from the left side */
+    }
+    to {
+        width: 100%; /* Extend to the full width */
+        left: 0; /* Keep the same position */
+    }
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+#tech-stack{
+    display: flex;
+    font-size: 60px;
+    height: 200px;
+    width: 700px;
+    line-height: 60px;
+    justify-content: center;
+   justify-content: space-around;
+   margin-left: 30%;
+   margin-top: 20px;
+}
+
+#backToHome {
+    position: fixed;
+    right: 20px; 
+    bottom: 20px; 
+    font-size: 18px;
+}
+
+#projects{
+    display: flex;
+    height:90vh;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between
+    
+}
+.project-container{
+    position:relative;
+    height: 700px;
+    width: 500px;
+    border: 2px solid black;
+}
+.row button{
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+}
+h1{
+    text-align: center;
+    text-decoration:underline;
+}
+#project1 img{
+    object-fit: fill;
+}
+.project-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+.row{
+    margin-left: 300px;
+    margin-right: -10px;
+}
+#toggle button {
+    
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+
