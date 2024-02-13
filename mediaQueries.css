@@ -147,3 +147,10 @@
         margin-top: 75px;
     }
 }
+@media  screen and (max-width: 1700px){
+    .row{
+        margin-left: 100px;
+        margin-right: -20px;
+    } 
+
+}
