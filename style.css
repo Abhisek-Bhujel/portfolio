@@ -9,6 +9,13 @@ body{
 #homepage{
     height: 100vh;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+a, .btn{
+    transition: all 300ms ease;
+}
 #navBar{
     
     height: 60px;
@@ -29,7 +36,7 @@ body{
    
 }
 
-  
+ 
 a{
    
     text-decoration: none;
@@ -77,7 +84,6 @@ img{
     font-size: 60px;
     margin-right: 10px;
     text-align: center;
-    transform: translateY(-50%);  
     color:#0D6dfd;
     text-decoration: underline;
     white-space: nowrap;
@@ -107,11 +113,11 @@ img{
 @keyframes runLine {
     from {
         width: 0;
-        left: 0; /* Start from the left side */
+        left: 0; 
     }
     to {
-        width: 100%; /* Extend to the full width */
-        left: 0; /* Keep the same position */
+        width: 100%; 
+        left: 0;
     }
 }
 
@@ -121,6 +127,19 @@ img{
     border-radius: 50%;
     border: 1px solid black;
     object-fit: cover;
+    
+}
+#logo1{
+    animation: pop 3s ease 1;
+}
+#logo2{
+    animation: pop 4s ease 1;
+}
+#logo3{
+    animation: pop 5s ease 1;
+}
+#logo4{
+    animation: pop 6s ease 1;
 }
 #tech-stack{
     display: flex;
@@ -132,6 +151,16 @@ img{
    justify-content: space-around;
    margin-left: 30%;
    margin-top: 20px;
+}
+
+@keyframes pop {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }
 
 #backToHome {
@@ -166,18 +195,12 @@ h1{
     text-align: center;
     text-decoration:underline;
 }
-#project1 img{
-    object-fit: fill;
-}
-.project-container{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 50px;
-}
-.row{
-    margin-left: 300px;
+
+
+ .row{
+    margin-left: 250px;
     margin-right: -10px;
-}
+} 
 #toggle button {
     
     position: absolute;
@@ -186,4 +209,52 @@ h1{
     width: 150px;
 }
 
+#contacts h1{
+    position: relative;
+    margin-top: 1010px;
+    text-align: center;
+    color: #0D6dfd;
+    font-size: 60px;
+    text-decoration: underline;
+}
+#contactMeNote {
+    font-size: 40px;
+    margin-top: 50px;
+    height:200px;
+    width:100%;
+    text-align: center;
+   
 
+}
+#symbol{
+    font-size: 40px;
+    text-align: center;
+    
+}
+a:hover{
+    color:rgb(0, 0, 255);
+    
+}
+
+#sendMessage{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+ #sendMessage textarea{
+    border: 2px solid black;
+    border-radius: 15px;
+ }
+ #b{
+    margin-bottom: 30px;
+ }
+ #footer{
+    margin-bottom: 20px;
+ }
+ 
+.p{
+    justify-content: center;
+    text-align: center;
+}
+ 

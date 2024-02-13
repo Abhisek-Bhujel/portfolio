@@ -17,4 +17,23 @@ function toggle() {
     }
 }
 
+const sendButton = document.querySelector("#sendButton button");
+const textArea = document.querySelector("#message");
+const resetButton = document.querySelector("#sendButton button[type='reset']");
 
+
+sendButton.addEventListener("click", send);
+resetButton.addEventListener("click", reset);
+function send() {
+    if(textArea.value != ""){
+        textArea.value = ""; 
+        alert("Thank you for sending message. I will get back to you ASAP");
+    }
+    else{
+        alert("No message was typed");
+    }
+}
+
+function reset(){
+    textArea.value="";
+}
