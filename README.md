@@ -18,3 +18,4 @@ My first portfolio project. This portfolio gives a glance of my current experien
 - JavaScript
 
 
+portfolio link: https://abhisek-bhujel.github.io/portfolio/
