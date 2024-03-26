@@ -141,11 +141,23 @@ img{
 #logo4{
     animation: pop 6s ease 1;
 }
+#logo5{
+    animation: pop 7s ease 1;
+}
+#logo6{
+    animation: pop 8s ease 1;
+}
+#logo7{
+    animation: pop 9s ease 1;
+}
+#logo8{
+    animation: pop 10s ease 1;
+}
 #tech-stack{
     display: flex;
     font-size: 60px;
     height: 200px;
-    width: 700px;
+    width: 900px;
     line-height: 60px;
     justify-content: center;
    justify-content: space-around;
